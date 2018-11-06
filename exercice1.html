@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 1</title>
+  </head>
+<body>
+  <canvas id="glace" width="400" height="400">
+<script>
+var c = document.getElementById("glace");
+var ctx = c.getContext("2d");
+//glace
+ctx.beginPath();
+ctx.lineWidth="3";
+ctx.strokeStyle="#8a0908";
+ctx.moveTo(300,200);
+ctx.quadraticCurveTo(200,0,200,200);
+ctx.fillStyle="#8a0908";
+ctx.stroke();
+ctx.fill();
+
+//cornet
+ctx.beginPath();
+ctx.moveTo(250,400);
+ctx.lineTo(200,200);
+ctx.lineTo(300,200);
+ctx.closePath();
+ctx.fillStyle = "#aa6522";
+ctx.fill();
+</script>
+</canvas>
+</body>
+</html>
